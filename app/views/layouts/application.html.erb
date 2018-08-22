@@ -17,16 +17,36 @@ table {
 }
 
 td {
-  padding-right: 50px
+  padding-right: 30px
 }
 tr {
-  padding-bottom: 10px
+  padding-bottom: 1%
+}
+
+p {
+  color:white
+}
+a {
+  color: red
 }
 </style>
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="collapse navbar-collapse" id="navbarColor02">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link"><%=link_to "Index",students_path %><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"><%=link_to "Landing",pages_landing_path %></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  <%= yield %>
 
-<%= yield %>
+
 
 </body>
 </html>

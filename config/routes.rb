@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'pages/landing'
+
   resources :students
   root 'students#index'
   # The priority is based upon order of creation: first created -> highest priority.
